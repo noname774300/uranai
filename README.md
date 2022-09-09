@@ -19,3 +19,9 @@ yarn dev
 ```
 
 Write your code in `src/main.ts`.
+
+And then
+
+```sh
+yarn deploy
+```
