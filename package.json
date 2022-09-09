@@ -13,12 +13,15 @@
     "precommit": "yarn format && yarn lint",
     "format:fix": "prettier . --write",
     "lint:fix": "eslint . --fix",
-    "fix": "yarn format:fix && yarn lint:fix"
+    "fix": "yarn format:fix && yarn lint:fix",
+    "predeploy": "yarn precommit && yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
