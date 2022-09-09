@@ -9,6 +9,7 @@ const characters: string[] = [];
 
 function update() {
   if (!ticks) {
+    return;
   }
 }
 

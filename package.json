@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "format": "prettier . --check",
+    "lint": "eslint .",
+    "precommit": "yarn format && yarn lint",
+    "format:fix": "prettier . --write",
+    "lint:fix": "eslint . --fix",
+    "fix": "yarn format:fix && yarn lint:fix"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.36.2",
